@@ -51,6 +51,9 @@ public class ClassEd {
 		inverseJoinColumns=@JoinColumn(name="STUDENT_ID", referencedColumnName="ID"))
 	private List<Student> listStudents;
 	
+	@OneToMany(mappedBy = "classEd")
+	private List<Evaluation> listEvaluation;
+	
 	public Long getId() {
 		return id;
 	}

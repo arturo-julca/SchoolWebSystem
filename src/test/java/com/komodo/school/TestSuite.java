@@ -6,6 +6,8 @@ import org.junit.runners.Suite;
 import com.komodo.school.handler.BuildingHandlerTest;
 import com.komodo.school.handler.ClassEdHandlerTest;
 import com.komodo.school.handler.CourseHandlerTest;
+import com.komodo.school.handler.EvaluationHandlerTest;
+import com.komodo.school.handler.EvaluationResultHandlerTest;
 import com.komodo.school.handler.RoomHandlerTest;
 import com.komodo.school.handler.ScheduleHandlerTest;
 import com.komodo.school.handler.SemesterHandlerTest;
@@ -18,6 +20,8 @@ import com.komodo.school.handler.TeacherHandlerTest;
    BuildingHandlerTest.class,
    ClassEdHandlerTest.class,
    CourseHandlerTest.class,
+   EvaluationHandlerTest.class,
+   EvaluationResultHandlerTest.class,
    RoomHandlerTest.class,
    ScheduleHandlerTest.class,
    SemesterHandlerTest.class,

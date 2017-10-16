@@ -1,8 +1,12 @@
 package com.komodo.school.util;
 
+import java.math.BigDecimal;
+
 import com.komodo.school.model.Building;
 import com.komodo.school.model.ClassEd;
 import com.komodo.school.model.Course;
+import com.komodo.school.model.Evaluation;
+import com.komodo.school.model.EvaluationResult;
 import com.komodo.school.model.Room;
 import com.komodo.school.model.Schedule;
 import com.komodo.school.model.Semester;
@@ -69,5 +73,18 @@ public class RandomModelCreator {
 		teacher.setFirstName("Perez");
 		teacher.setCode("9000201");
 		return teacher;
+	}
+	
+	public static Evaluation createEvaluation(){
+		Evaluation evaluation = new Evaluation();
+		evaluation.setTypeEvaluation(1);
+		evaluation.setWeight(5);
+		return evaluation;
+	}
+	
+	public static EvaluationResult createEvaluationResult(){
+		EvaluationResult evaluationResult = new EvaluationResult();
+		evaluationResult.setScore(new BigDecimal(10));
+		return evaluationResult;
 	}
 }
